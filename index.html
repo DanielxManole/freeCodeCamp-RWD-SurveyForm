@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smokers Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<h1 id="title">Smokers Survey Form</h1>
+<p id="description">We are trying to fight smoking with the help of vaping, a cheaper and healthier alternative</p>
+<form id="survey-form" method="POST" action="https://register-demo.freecodecamp.org">
+<div class="spatiu"></div>
+<fieldset>
+  <legend>Personal information</legend>
+  <label id="name-label" for="name">Name<div class="radio-mijloc"><input id="name" name="name" type="text" placeholder="Enter your name" pattern="[A-Za-z\s\-]{4, 50}" required /></div></label>
+  <label id="email-label" for="email">Email<div class="radio-mijloc"><input id="email" name="email" type="email" placeholder="Enter your email" required /></div></label>
+  <label id="number-label" for="number">Age<div class="radio-mijloc"><input id="number" name="age" type="number" min="18" max="100" placeholder="Age" required /></div></label>
+</fieldset>
+
+<fieldset>
+  <legend>Current smoking situation</legend>
+  <label for="time-smoking"><div class="intrebare">❓How long have you been smoking traditional cigarettes?</div>
+    <select id="time-smoking" name="time-smoking" required>
+      <option value="">(select one)</option>
+      <option value="1">Less than 1 year</option>
+      <option value="2">Between 1 and 2 years</option>
+      <option value="3">Between 2 and 5 years</option>
+      <option value="4">Between 5 and 10 years</option>
+      <option value="5">More than 10 years</option>
+    </select></label>
+  <label for="cantity-smoking">❓How many packs of cigarettes do you smoke on average per week?
+    <select id="time-smoking" name="time-smoking" required>
+      <option value="">(select one)</option>
+      <option value="1">Less than 1 pack</option>
+      <option value="2">Between 1 and 3 packs</option>
+      <option value="3">Between 4 and 6 packs</option>
+      <option value="4">Between 7 and 10 packs</option>
+      <option value="5">Between 11 and 14 packs</option>
+      <option value="6">More than 14 packs</option>
+    </select></label>
+    <label for="quit-smoking">❓Have you ever tried to quit smoking?
+    <select id="dropdown" name="quit-attempt" required>
+      <option value="">(select one)</option>
+      <option value="1">Yes, but I didn't succeed at all</input</option>
+      <option value="2">Yes, but I started again after a while</option>
+      <option value="3">No, I didn't have that thought</option>
+    </select></label>
+  </fieldset>
+
+<fieldset>
+  <legend>Questions about vaping</legend>
+  <label for="healthier"><div class="intrebare">❓What have you heard about vaping so far?</div>
+  <div class="checkbox-mijloc"><input id="healthier" name="healthier" type="checkbox" class="inline" value="healthier">It is less harmful than smoking</div></label>
+  <label for="dangerous">
+    <div class="checkbox-mijloc"><input id="dangerous" name="dangerous" type="checkbox" class="inline" value="dangerous">There are health risks associated with it</div></label>
+  <label for="not-safe-long-term">
+    <div class="checkbox-mijloc"><input id="not-safe-long-term" name="not-safe-long-term" type="checkbox" class="inline" value="not-safe-long-term">It's not clear how safe vaping is long-term</div></label>
+  <label for="used-to-quit">
+    <div class="checkbox-mijloc"><input id="used-to-quit" name="used-to-quit" type="checkbox" class="inline" value="used-to-quit">Some use vaping to quit smoking</div></label>
+  <label for="flavor">
+    <div class="checkbox-mijloc"><input id="flavor" name="flavor" type="checkbox" class="inline" value="flavor">It has many attractive flavors</div></label>
+  <label for="nicotine">
+    <div class="checkbox-mijloc"><input id="nicotine" name="nicotine" type="checkbox" class="inline" value="nicotine">There are vaping products that contain nicotine</div></label>
+  <label for="idk">
+    <div class="checkbox-mijloc"><input id="idk" name="idk" type="checkbox" class="inline" value="idk">I haven't heard much about it</div></label>
+  
+  <label for="thought"><div class="intrebare">❓Have you ever thought about trying vaping?</div><div class="radio-mijloc"><input id="thought" name="trying-vape" type="radio" class="inline" value="yes" required>Yes, I thought</div></label>
+  <label for="didnt-think"><div class="radio-mijloc"><input id="didnt-think" name="trying-vape" type="radio" class="inline" value="no">No, I didn't think</div></label>
+
+  <label for="start-vape-1">
+    <div class="intrebare">❓What would be the main reason why you would start vaping?</div>
+    <div class="radio-mijloc"><input id="start-vape-1" type="radio" name="start" class="inline" value="reducing-cigarette-consumption" required>Reducing cigarette consumption</div></label>
+  <label for="start-vape-2">
+    <div class="radio-mijloc"><input id="start-vape-2" type="radio" name="start" class="inline" value="healthier-alternative">Trying a healthier alternative</div></label>
+  <label for="start-vape-3">
+    <div class="radio-mijloc"><input id="start-vape-3" type="radio" name="start" class="inline" value="cheaper-alternative">Trying a cheaper alternative</div></label>
+  <label for="start-vape-4">
+    <div class="radio-mijloc"><input id="start-vape-4" type="radio" name="start" class="inline" value="peer-influence">Other people around you are vaping</div></label>
+  <label for="start-vape-5">
+    <div class="radio-mijloc"><input id="start-vape-5" type="radio" name="start" class="inline" value="other-reason">Other reason:</div></label>
+  <label for="other-reason">
+    <div class="radio-mijloc"><textarea id="other-reason" name="other-reason" rows="2" cols="48" placeholder="Write here other reason..."></textarea></div></label>
+
+  <label for="anti-vape-1">
+    <div class="intrebare">❓What would make you never try vaping?</div><div class="radio-mijloc"><input id="anti-vape-1" type="radio" name="never" class="inline" value="fear-of-unknown" required>Fear of the unknown</div></label>
+  <label for="anti-vape-2">
+    <div class="radio-mijloc"><input id="anti-vape-2" type="radio" name="never" class="inline" value="health-risks">Possible health risks</div></label>
+  <label for="anti-vape-3">
+    <div class="radio-mijloc"><input id="anti-vape-3" type="radio" name="never" class="inline" value="price">The price of vape devices</div></label>
+  <label for="anti-vape-4">
+    <div class="radio-mijloc"><input id="anti-vape-4" type="radio" name="never" class="inline" value="other-reason2">Other reason:</div></label>
+  <label for="other-reason2"><div class="radio-mijloc"><textarea id="other-reason2" name="other-reason2" rows="2" cols="48" placeholder="Write here other reason..."></textarea></div></label>
+
+  <label for="doubt1"><div class="intrebare">❓What is the biggest doubt you have about vaping?</div><div class="radio-mijloc"><input id="doubt1" type="radio" name="doubt" class="inline" value="long-term-safety" required>Long-term safety</div></label>
+  <label for="doubt2">
+    <div class="radio-mijloc"><input id="doubt2" type="radio" name="doubt" class="inline" value="effectiveness-quitting">Effectiveness in quitting smoking</div></label>
+  <label for="doubt3">
+    <div class="radio-mijloc"><input id="doubt3" type="radio" name="doubt" class="inline" value="taste-experience">The taste or the experience</div></label>
+  <label for="doubt4">
+    <div class="radio-mijloc"><input id="doubt4" type="radio" name="doubt" class="inline" value="other-reason3">Other reason:</div></label>
+  <label for="other-reason3"><div class="radio-mijloc"><textarea id="other-reason3" name="other-reason3" rows="2" cols="48" placeholder="Write here other reason..."></textarea></div></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Behaviors and preferences</legend>
+  <label for="convince1"><div class="intrebare">❓What would convince you to try vaping instead of cigarettes?</div><div class="checkbox-mijloc"><input id="convince1" name="convince1" type="checkbox" class="inline" value="recommendations">Recommendations from friends/family</div></label>
+  <label for="convince2">
+    <div class="checkbox-mijloc"><input id="convince2" name="convince2" type="checkbox" class="inline" value="scientific-evidence">Scientific evidence that it is healthier</div></label>
+  <label for="convince3">
+    <div class="checkbox-mijloc"><input id="convince3" name="convince3" type="checkbox" class="inline" value="promotions">Promotions/advantageous prices</div></label>
+  <label for="convince4">
+    <div class="checkbox-mijloc"><input id="convince4" type="checkbox" name="convince4" class="inline" value="other-reason4">Other reason(s):</div></label>
+  <label for="other-reason4"><div class="radio-mijloc"><textarea id="other-reason4" name="other-reason4" rows="2" cols="48" placeholder="Write here other reason(s)..."></textarea></div></label>
+
+  <label for="long-term-health">❓How important is long-term health to you when considering switching to vaping?
+  <select id="long-term-health" name="long-term-health" required>
+    <option value="">(select one)</option>
+     <option value="1">Very important</option>
+     <option value="2">Important</option>
+     <option value="3">Less important</option>
+     <option value="4">Not important</option>
+   </select></label>
+
+  <label for="friends-that-use">❓Do you have friends or acquaintances who use vape devices?<div class="radio-mijloc"><input id="friends-that-use" name="friends-that-use" type="radio" class="inline" value="Yes" required>Yes, I have</div></label>
+  <label for="dont-have-friends-that-use">
+    <div class="radio-mijloc"><input id="dont-have-friends-that-use" name="friends-that-use" type="radio" class="inline" value="No">No, I don't have</div></label>
+  <label for="friends-experience"><div class="radio-mijloc"><textarea id="friends-experience" name="friends-experience" rows="3" cols="48" placeholder="Describe what they told you about their experience, whether it was good or bad..."></textarea></div></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Products and features</legend>
+  <label for="feature1"><div class="intrebare">❓What feature of a vape device would attract your attention the most?</div><div class="checkbox-mijloc"><input id="feature1" name="feature1" type="checkbox" class="inline" value="size-portability">Size/portability</div></label>
+  <label for="feature2">
+    <div class="checkbox-mijloc"><input id="feature2" name="feature2" type="checkbox" class="inline" value="available-flavors">Available flavors</div></label>
+  <label for="feature3">
+    <div class="checkbox-mijloc"><input id="feature3" name="feature3" type="checkbox" class="inline" value="nicotine-level">Nicotine level</div></label>
+  <label for="feature4">
+    <div class="checkbox-mijloc"><input id="feature4" type="checkbox" name="feature4" class="inline" value="modern-design">Modern design</div></label>
+  <label for="feature5">
+    <div class="checkbox-mijloc"><input id="feature5" type="checkbox" name="feature5" class="inline" value="Price">Price</div></label>
+
+  <label for="money-invest"><div class="intrebare">❓How much would you be willing to invest in a vape device?</div>
+  <select id="money-invest" name="money-invest" required>
+    <option value="">(select one)</option>
+    <option value="1">Under 100 RON</option>
+    <option value="2">Between 100 RON and 300 RON</option>
+    <option value="3">More than 300 RON</option>
+   </select></label>
+
+  <label for="care-about-flavors">❓How much do you care about the flavors available in vapes?
+  <select id="care-about-flavors" name="care-about-flavors" required>
+    <option value="">(select one)</option>
+    <option value="1">Very much</option>
+    <option value="2">Moderately</option>
+    <option value="3">A little</option>
+    <option value="4">Not at all</option>
+   </select></label>
+    </fieldset>
+
+  <fieldset>
+    <legend>Health and transition</legend>
+  <label for="effective-way-reduce-smoking"><div class="intrebare">❓Do you think vaping is an effective way to cut down on smoking?</div><div class="radio-mijloc"><input id="effective-way-reduce-smoking" name="effective-way" type="radio" class="inline" value="Yes" required>Yes, I think</div></label>
+  <label for="not-effective-way-reduce-smoking">
+    <div class="radio-mijloc"><input id="not-effective-way-reduce-smoking" name="effective-way" type="radio" class="inline" value="No">No, I don't think</div></label>
+  <label for="not-sure-reduce-smoking">
+    <div class="radio-mijloc"><input id="not-sure-reduce-smoking" name="effective-way" type="radio" class="inline" value="Not-sure">I'm not sure</div></label>
+
+  <label for="gradual-transition"><div class="intrebare">❓If you were to make the transition to vaping, would you want to do it gradually or all at once?</div><div class="radio-mijloc"><input id="gradual-transition" name="transition" type="radio" class="inline" value="gradually" required>Gradually cutting back on cigarettes as I vape</div></label>
+  <label for="sudden-transition">
+    <div class="radio-mijloc"><input id="sudden-transition" name="transition" type="radio" class="inline" value="sudden">Suddenly, without smoking traditional cigarettes</div></label>
+  <label for="not-sure-transition">
+    <div class="radio-mijloc"><input id="not-sure-transition" name="transition" type="radio" class="inline" value="not-sure">I'm not sure</div></label>
+
+  <label for="doctor-alternative1"><div class="intrebare">❓Have you ever consulted a doctor or specialist about alternatives to smoking?</div><div class="radio-mijloc"><input id="doctor-alternative1" name="doctor-alternative" type="radio" class="inline" value="consulted" required>Yes, I consulted</div></label>
+  <label for="doctor-alternative2">
+    <div class="radio-mijloc"><input id="doctor-alternative2" name="doctor-alternative" type="radio" class="inline" value="not-consult">No, I did not consult</div></label>
+  <label for="friends-experience"><div class="radio-mijloc"><textarea id="friends-experience" name="friends-experience" rows="2" cols="48" placeholder="If so, what advice did you get?"></textarea></div></label><br>
+
+  <label for="health-reason1">❓Do you have a health reason to give up smoking in favor of vaping?<div class="radio-mijloc"><input id="health-reason1" name="health-reason" type="radio" class="inline" value="have-health-reason" required>Yes, I have</div></label>
+  <label for="health-reason2">
+    <div class="radio-mijloc"><input id="health-reason2" name="health-reason" type="radio" class="inline" value="dont-have-health-reason">No, I don't have</div></label>
+  <label for="health-reason3"><div class="radio-mijloc"><textarea id="health-reason3" name="health-reason3" rows="2" cols="48" placeholder="If so, what is the reason (pulmonary, cardiovascular problems, etc.)?"></textarea></div></label>
+    </fieldset>
+
+<fieldset>
+  <legend>Free section for answers</legend>
+  <label for="free-section1"><div class="intrebare">❓What else would you like to know about vaping before making a decision?</div><div class="radio-mijloc"><textarea id="free-section1" name="free-section1" rows="5" cols="48" placeholder="What would help you decide? Share your thoughts..."></textarea></div></label>
+  <label for="free-section2"><div class="intrebare">❓Have you had any doubts or questions that were not covered in this survey?</div><div class="radio-mijloc"><textarea id="free-section2" name="free-section2" rows="5" cols="48" placeholder="Anything else you wish had been covered? Write it here..."></textarea></div></label>
+  </fieldset>
+
+  <label for="consent"><div class="termeni"><input class="inline" id="consent" type="checkbox" name="consent" value="termeni" required/>I consent to the collection and processing of my personal data for the purpose of this survey</div></label>
+
+  <input id="submit" type="submit" value="Submit"/>
+  </form>
+
+<footer>
+  <p>&copy 2024 <a href="https://www.linkedin.com/in/manoledaniel/">Manole Daniel</a> All rights reserved.</p>
+  </footer>
+  </body>
+</html>
